@@ -30,12 +30,17 @@ class HomeController < ActionController::Base
       @me['name'] = graph_me['name']
       @me['picture'] = graph_me['picture']['data']['url']
 
-      if graph_me["location"].nil?
-        #default location set to Berlin
-        @message = "Sorry, but we can't get your location from Facebook. You are now living in Berlin! Enjoy! :)"
-        city = find_city(111175118906315) 
+       if graph_me['location'].nil?
+        if graph_me['hometown'].nil?
+          #default location set to Berlin
+          @message = "Sorry, but we can't get your location from Facebook. You are now living in Berlin! Enjoy! :)"
+          city = find_city(111175118906315)
+        else
+          city_id = graph_me['hometown']['id']
+          city = find_city(city_id)
+        end
       else
-        city_id = graph_me["location"]["id"]
+        city_id = graph_me['location']['id']
         city = find_city(city_id)
       end
       
