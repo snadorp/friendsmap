@@ -1,0 +1,4 @@
+%script{:type => "text/javascript", :src  => "https://www.google.com/jsapi"}
+#map3d
+:javascript
+  window.ge.init('#{raw @me.to_json}','#{raw @friends.to_json}');

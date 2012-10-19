@@ -1,0 +1,13 @@
+.overlay#loader
+.jumbotron.masthead
+  .container
+    %h1 #{icon_text('icon-globe', 'Friends Map')}
+    %p Ever wondered where all your Facebook friends are located? We'll show you on Google Earth!
+    =link_to icon_text('icon-facebook-sign', 'Get started!'), @auth_url, :class=>"btn btn-primary btn-large", :onclick => 'loader.load()'
+%footer.footer
+  .container
+    %p Developed by #{link_to('Sebastian Nadorp', 'https://github.com/snadorp')}
+    %p #{link_to("Code", 'https://github.com/snadorp/friendsmap')} licensed under the #{link_to('MIT Licence', 'https://github.com/snadorp/friendsmap/blob/master/LICENCE')}
+    %p Icons by #{link_to('Font Awesome', 'http://fortawesome.github.com/Font-Awesome')}
+    %p Using #{link_to('Twitter Bootstrap', 'http://twitter.github.com/bootstrap')} frontend framework
+  .row

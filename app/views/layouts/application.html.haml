@@ -1,0 +1,20 @@
+!!! 5
+%html{"lang" => "en"}
+  %head
+    %meta{:charset => "utf-8"}
+    %meta{:content => "width=device-width, initial-scale=1.0", :name => "viewport"}
+    %title Friends Map
+    %link{ :rel => "shortcut icon", :href => "/favicon.ico", :type => "image/x-icon"}
+
+    = stylesheet_link_tag "application"
+    = csrf_meta_tags
+    = javascript_include_tag "application"
+
+  %body
+  .navbar.navbar-fixed-top.navbar-inverse
+    .navbar-inner
+      .container
+        %a.brand
+          =icon_text('icon-globe', 'Friends Map')
+        .nav-collapse
+  = yield
