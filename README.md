@@ -6,8 +6,8 @@ It's ready to be pushed on heroku, just add your add your Facebook API key and y
 
 ## Screenshots ##
 
-![Screen Shot 1](https://github.com/snadorp/friendsmap/blob/master/doc/screen1.png)
-![Screen Shot 2](https://github.com/snadorp/friendsmap/blob/master/doc/screen2.png)
+![Screen Shot 1](https://raw.github.com/snadorp/friendsmap/master/doc/screen1.png)
+![Screen Shot 2](https://raw.github.com/snadorp/friendsmap/master/doc/screen2.png)
 
 ## Quickstart guide ##
 
